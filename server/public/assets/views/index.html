@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+
+       <!--Here are my style sheet links-->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <p>This is a header, but you probably already know that.</p>
+        </header>
+        <h1 class="md-display-1">CAT</h1>
+        <!--angular material heading-->
+        <p class="md-title">Developer In-Training</p>
+        <!--<div layout="row">-->
+
+            <!--<md-tabs>-->
+                <!--<md-tab label="home">Home</md-tab>-->
+            <!--</md-tabs>-->
+            <!--could not use md-tabs for the other htmls-->
+
+            <ul>
+                <!--found on material.angular.js site it is a layout attribute placed on my element that will lay its children in a row-->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#contact">Me Likey</a></li>
+            </ul>
+        <!--</div>-->
+
+
+        <div>
+            <main ng-view></main>
+        </div>
+
+        <footer>
+            <p>Footer! A.K.A the bottom!</p>
+
+            <div class="well">
+                <ul class="socialsites">
+                    <li><a href="https://www.linkedin.com/pub/catabriea-white/102/9b1/2b3">Link Me</a></li>
+                    <li><a href="https://github.com/catabriea">Code Work</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!--SCRIPTS-->
+        <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+        <script type="text/javascript" src="/assets/scripts/controllers/controller.min.js"></script>
+    </body>
+</html>
