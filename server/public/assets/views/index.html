@@ -5,53 +5,111 @@
         <title></title>
 
        <!--Here are my style sheet links-->
+        <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
         <link rel="stylesheet" href="/assets/styles/style.css">
-        <!--<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">-->
     </head>
     <body>
-        <header>
-            <p>This is a header, but you probably already know that.</p>
-        </header>
-        <h1 class="md-display-1">CAT</h1>
-        <!--angular material heading-->
-        <p class="md-title">Developer In-Training</p>
-        <!--<div layout="row">-->
+        <div class="container">
+            <header>
+                <p>This is a header, but you probably already know that.</p>
+            </header>
+            <!--<h1 class="md-display-1">CAT</h1>-->
+            <!--angular material heading-->
+            <!--<p class="md-title">Developer In-Training</p>-->
+            <!--<div layout="row">-->
 
             <!--<md-tabs>-->
-                <!--<md-tab label="home">Home</md-tab>-->
+            <!--<md-tab label="home">Home</md-tab>-->
             <!--</md-tabs>-->
             <!--could not use md-tabs for the other htmls-->
 
+
             <ul>
                 <!--found on material.angular.js site it is a layout attribute placed on my element that will lay its children in a row-->
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#family">Family</a></li>
-                <li><a href="#melikey">Me Likey</a></li>
+                <div class="col-md-2">
+                    <li><a href="#home">Home</a></li>
+                </div>
+                <div class="col-md-2">
+                    <li><a href="#about">About</a></li>
+                </div>
+                <div class="col-md-2">
+                    <li><a href="#family">Family</a></li>
+                </div>
+                <div class="col-md-2">
+                    <li><a href="#melikey">Me Likey</a></li>
+                </div>
+                <div class="col-md-2">
+                    <li><a href="#message">Message Me</a></li>
+                </div>
+                <div class="col-md-2">
+                    <li><a href="#game">Interaction</a></li>
+                </div>
+
             </ul>
-        <!--</div>-->
+
+            <div class="myPage">
+                <div class="col-md-12">
+                    <h6>CAT</h6>
+                    <p> Developer In-Training </p>
+                </div>
+            </div>
+
+            <!--<div class="jumbotron">-->
+                <!--<h1>Catabriea</h1>-->
+                <!--<p> ...call me Cat</p>-->
+                <!--<h2>Dev In-Training</h2>-->
+            <!--</div>-->
 
 
-        <div>
-            <main ng-view></main>
+
+            <!--</div>-->
+
+
+            <div>
+                <main ng-view></main>
+            </div>
+            <div class="col-md-12">
+                <footer>
+                    <div id="contact_page">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span4 pull-center">
+                                    <p>
+                                        <button class="btn btn-linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/pub/catabriea-white/102/9b1/2b3"> | Connect with LinkedIn</button><br>
+                                    </p>
+
+                                    <p>
+                                        <button class="btn btn-github"><i class="fa fa-github"></i><a href="https://github.com/catabriea"> | GitHub </button><br>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="well">-->
+                        <!--<ul class="socialsites">-->
+                            <!--<li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/pub/catabriea-white/102/9b1/2b3">Link Me</a></li>-->
+                            <!--<li>         </li>-->
+                            <!--<li><a href="https://github.com/catabriea">Code Work</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <P>&copy Cat White 2015 - because Copyrights are cool</P>
+                </footer>
+            </div>
+
         </div>
 
-        <footer>
-            <p>Footer! A.K.A the bottom!</p>
 
-            <div class="well">
-                <ul class="socialsites">
-                    <li><a href="https://www.linkedin.com/pub/catabriea-white/102/9b1/2b3">Link Me</a></li>
-                    <li><a href="https://github.com/catabriea">Code Work</a></li>
-                </ul>
-            </div>
-        </footer>
+            <!--SCRIPTS-->
+            <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+            <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
 
-        <!--SCRIPTS-->
-        <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
-        <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+            <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
-        <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
-        <script type="text/javascript" src="/assets/scripts/controllers/controller.min.js"></script>
+            <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+            <script type="text/javascript" src="/assets/scripts/controllers/controller.min.js"></script>
     </body>
 </html>

@@ -54,7 +54,9 @@ module.exports = function(grunt){
                     "views/routes/about.html",
                     "views/routes/home.html",
                     "views/routes/family.html",
-                    "views/routes/melikey.html"
+                    "views/routes/melikey.html",
+                    "views/routes/message.html",
+                    "views/routes/game.html"
                 ],
                 "dest": "server/public/assets/"
             },
